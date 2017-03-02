@@ -1,0 +1,21 @@
+URxvt.font:	   xft:Meslo LG S:size=10
+URxvt.scrollStyle: rxvt
+URxvt.scrollBar:   false
+URxvt.background:  #000000
+URxvt.foreground:  #ffffff
+URxvt.transparent: true
+URxvt.shading:     0
+URxvt.cursorColor: #ffffff
+URxvt.color0:      #073642
+URxvt.color8:	   #002b36
+URxvt.borderLess:  false
+URxvt.borderColor: #000000
+URxvt.fading:	   25%
+
+! State:	   'bg',	'fg',	  'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal: #aa000000,	#ffffff,  #aa000000, #aa111111,  #ffffff
+rofi.color-urgent: #aa000000,	#ffffff,  #aa000000, #aa000000,  #ffffff
+rofi.color-active: #aa000000,	#ffffff,  #aa000000, #aa000000,  #ffffff
+
+!		   'background',  'border',  'separator'
+rofi.color-window: #aa000000,     #aa000000, #aa000000
