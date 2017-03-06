@@ -35,8 +35,11 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start rofi (a program launcher)
-bindsym $mod+space exec rofi -show run -lines 3 -eh 2 -width 50 -padding 0 -bw 0 -hide-scrollbar -separator-style "none"
+# start dmenu (a program launcher)
+bindsym $mod+d exec dmenu_run
+
+# take a screenshot with scrot
+bindsym --release $mod+z exec scrot -s
 
 # change focus
 bindsym $mod+j focus left
@@ -45,10 +48,8 @@ bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
-bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -80,7 +81,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+d focus mode_toggle
+bindsym $mod+Space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -93,6 +94,9 @@ set $workspace2 "2 "
 set $workspace3 "3 "
 set $workspace4 "4 "
 
+# switch between previous and next workspaces
+bindsym $mod+Left workspace prev
+bindsym $mod+Right workspace next
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
